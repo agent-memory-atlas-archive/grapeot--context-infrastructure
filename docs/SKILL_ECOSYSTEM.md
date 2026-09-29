@@ -70,6 +70,7 @@ Start from my workspace AGENTS.md or CLAUDE.md. Follow any WORKSPACE.md or skill
 | Embedded hardware | [m5stack-sticks3-skill](https://github.com/grapeot/m5stack-sticks3-skill) | M5StickS3 板级 bring-up 与实机验收指南；覆盖 Arduino/ESP-IDF、按钮、电源、LCD、IR、ES8311 音频、NVS 和 BLE HID 陷阱，不回显设备 secret |
 | Identity | [logto-management-skill](https://github.com/grapeot/logto-management-skill) | 安全发现、审计和管理 Logto 租户配置的 CLI + Python 库；支持租户 Swagger 检索、配置写入强制备份与回读校验、快照 diff、MFA 运维和破坏性操作 dry-run |
 | Writing | [writing-skill](https://github.com/grapeot/writing-skill) | 内部写作与外部写作两条工作流，共享诊断词汇表与 L1-L8 thesis catalog，以及确定性中文 prose lint CLI；内部文档降决策摩擦，外部文章防教材声、防认知超载 |
+| Writing | [voice-lora](https://github.com/grapeot/voice-lora) | 包含一个随包分发的 0.55 MB 轻量级 CPU 分类器（voice-lora-detect）和一个基于 Qwen3.5-9B 的改写模型（voice-lora-rewrite）。前者评估中文文章的 AI 味并分档，同时标出 AI 腔词；后者用 llama-server 逐段润色，保证结构、论证顺序和事实不变，改写后的文章带有鸭哥（yage.ai）的口吻，在 Mac 上处理 40 段约 45 秒，生成的内容需要复核事实漂移和格式。此外还提供一套反向合成数据的工具链（voice-lora），方便 agent 在有足够个人语料和一张 32 GB 显存 GPU 的前提下训练专属的改写模型和分类器。 |
 | Vision | [dinov3-classifier-skill](https://github.com/grapeot/dinov3-classifier-skill) | 把未标注图像转成精简本地视觉模型的完整流程：主动采样、人机校准、ONNX 导出、低成本端侧部署 |
 
 ## 选择原则
