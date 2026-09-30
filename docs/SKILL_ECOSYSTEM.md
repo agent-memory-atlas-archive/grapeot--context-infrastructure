@@ -22,6 +22,7 @@ Start from my workspace AGENTS.md or CLAUDE.md. Follow any WORKSPACE.md or skill
 | 方向 | Repo | 能力 |
 |---|---|---|
 | Web search | [tavily-skill](https://github.com/grapeot/tavily-skill) | Tavily search/extract CLI，给 agent 稳定 JSON 输出 |
+| Web search | [firecrawl-skill](https://github.com/grapeot/firecrawl-skill) | 使用 Firecrawl v2 的搜索/提取 CLI，纯标准库没有第三方依赖。命令行和 JSON 输出完全兼容 tavily-skill，可以直接平替。搜索默认包含网页全文 Markdown，网页提取支持按查询高亮，调用前会在 stderr 输出 credit 预估 |
 | Documents | [gdocs-skill](https://github.com/grapeot/gdocs-skill) | Google Docs 创建、搜索、修改、分享，支持 Markdown 和 tab |
 | Maps / travel | [google-maps-routing-skill](https://github.com/grapeot/google-maps-routing-skill) | Google Maps Routes + Geocoding CLI，支持地址解析、实时 drive time 和 leave-by 规划 |
 | Domains / DNS | [go-daddy-skill](https://github.com/grapeot/go-daddy-skill) | GoDaddy 域名与权威 DNS read-first CLI；完整清单、敏感字段脱敏，以及独立 write PAT 保护的 TXT create plan/apply |
