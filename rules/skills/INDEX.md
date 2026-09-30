@@ -45,7 +45,6 @@
 - [AI CLI Agent 实用指南](https://github.com/grapeot/ai-agent-cli-skill) → 已迁移到独立 public repo；按需安装 Claude Code / Codex / OpenCode / Antigravity / Grok 等 CLI 支持
 - [OpenReview API](./openreview.md) — 检索 AI 学术会议论文 metadata 与作者 profile（含 institution history、position、tilde ID）。触发词："OpenReview"、"查作者 profile"、"ICLR papers"、"NeurIPS papers"、"tilde ID"
 - [GitHub Actions → Koyeb 部署指南](./deployment_github_actions_koyeb.md) — 测试通过后通过 GitHub Actions 自动部署至 Koyeb；适用于各类 Docker 化应用
-- [使用 Apple 官方命令行工具发布 App Store Connect](./deployment_app_store_connect_cli.md) ✅ — 用稳定版 Xcode 完成 iOS archive、distribution export、IPA metadata 核验与授权后的上传；覆盖云托管 distribution 签名、profile 证书轮换与上传故障诊断
 - [分享报告到 Web](./share_report.md) ⚙️ — 将 Markdown 报告转为 HTML 发布至自建服务器并返回访问 URL
 - [Apple Compressor Skill](./compressor.md) ⚙️ — 本机 Apple Compressor CLI 转码；custom preset 路径、源文件写入完成检测、batch 提交与监控
 
@@ -68,7 +67,6 @@
 - [延时执行技能](./delayed_execution.md) ⚙️ — `sleep + nohup` 低风险 fallback；durable 或 AI 延时任务见 ecosystem 的 Process Launcher + OpenCode Skill
 - [项目脚手架与重整](./project_scaffold.md) ✅ — 把散落文件升级为规范工程目录并初始化独立 Git 仓库
 - [AI Session Search & Archive](./ai_session_search_archive.md) — 在 OpenCode、Claude Code、Codex、Antigravity 与 Second Mind 的统一 Markdown 归档中按来源检索历史会话
-- [iOS UI 自动化测试工作流](./ios_ui_automation.md) — 基于 Xcode 模拟器、XCTest 与 simctl 的 iOS 界面及功能自动化验证
 
 ### BestPractice（最佳实践）
 
@@ -91,7 +89,6 @@
 - [Mac Universal Clipboard 重置](./mac_universal_clipboard.md) ✅ — 当 Mac 与 iPhone/iPad 剪贴板不同步时，重置系统 `useractivityd` / `sharingd` / `pboard` 守护进程
 - [AI 产品设计原则](./bestpractice_ai_product_design.md) ✅ — 线性聊天 vs 知识工作、感知规则解耦
 - [产品/技术决策逆向工程](./bestpractice_product_decision_analysis.md) ✅ — 从设计空间、约束和 trade-off 分析产品或技术决策
-- [iOS Test Acceleration](./ios_test_acceleration.md) — iOS 单元测试与 UI 测试提速实践：涵盖串行 `xcodebuild`、`build-for-testing` + `test-without-building`、固定模拟器 UUID、定向 `-only-testing`、fixture launch arguments 及 `.xcresult` 解析
 - [Playwright E2E 测试方法论](https://github.com/grapeot/playwright-test-skill) 🔗 — 基于 CDP 的单步调试与端到端测试方法论。独立 public repo，CLI 为 `pw-test`。触发词："Playwright E2E"、"CDP debugging"、"SSO login test"、"browser step debugging"
 - [Playwright Ajax Capture](./playwright_ajax_capture.md) — 在已登录的 CDP 浏览器 session 中监听并拦截 fetch/XHR，逆向解析 Web 应用的 internal API 协议。触发词："抓 ajax"、"逆向 internal API"、"browser session 调 API"、"不用 admin key"
 
