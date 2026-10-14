@@ -80,6 +80,7 @@ Start from my workspace AGENTS.md or CLAUDE.md. Follow any WORKSPACE.md or skill
 | Writing | [writing-skill](https://github.com/grapeot/writing-skill) | 内部写作与外部写作两条工作流，共享诊断词汇表与 L1-L8 thesis catalog，以及确定性中文 prose lint CLI；内部文档降决策摩擦，外部文章防教材声、防认知超载 |
 | Writing | [voice-lora](https://github.com/grapeot/voice-lora) | 包含一个随包分发的 0.55 MB 轻量级 CPU 分类器（voice-lora-detect）和一个基于 Qwen3.5-9B 的改写模型（voice-lora-rewrite）。前者评估中文文章的 AI 味并分档，同时标出 AI 腔词；后者用 llama-server 逐段润色，保证结构、论证顺序和事实不变，改写后的文章带有鸭哥（yage.ai）的口吻，在 Mac 上处理 40 段约 45 秒，生成的内容需要复核事实漂移和格式。此外还提供一套反向合成数据的工具链（voice-lora），方便 agent 在有足够个人语料和一张 32 GB 显存 GPU 的前提下训练专属的改写模型和分类器。 |
 | Vision | [dinov3-classifier-skill](https://github.com/grapeot/dinov3-classifier-skill) | 把未标注图像转成精简本地视觉模型的完整流程：主动采样、人机校准、ONNX 导出、低成本端侧部署 |
+| Calendar | [apple-calendar-skill](https://github.com/grapeot/apple-calendar-skill) | 通过本地数据库快照只读查询 Apple Calendar 的轻量 CLI 与 Agent 技能，直接以只读模式读取数据库及 sidecar 文件，无需 TCC 自动化权限。提供 `calendars`、`list`、`search`、`get` 与 `selftest` 五项命令，以 JSON 格式输出日历清单、按日期区间过滤日程并检索事件详情。针对底层存储基于 2001 年 Cocoa 参考时刻绝对秒数的机制，工具在结构上严格保证时间语义，同时输出 `start_utc` 真值与 `start_local` 本地显示时间，避免墙钟误读。包含 31 项离线 pytest 单元测试并通过 GitHub Actions CI，内置 `selftest` 在真实数据库上校验七项不变式。 |
 
 ## 选择原则
 
