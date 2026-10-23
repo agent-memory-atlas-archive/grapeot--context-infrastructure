@@ -21,6 +21,7 @@ Start from my workspace AGENTS.md or CLAUDE.md. Follow any WORKSPACE.md or skill
 
 | 方向 | Repo | 能力 |
 |---|---|---|
+| Live monitoring | [bilibili-live-monitor](https://github.com/grapeot/bilibili-live-monitor) | Apple Silicon Mac多路B站直播文本监控：静音Chrome与Web Audio独立采音、本地Qwen3-ASR-1.7B/MLX共享串行转写，复用网页WebSocket解码弹幕并合为每房间时间线，支持SQLite持久化、SSE、全宽全屏自动跟随和JSONL导出。不依赖付费识别API；不展示视频、不做图像理解或音频回放，运行消耗本机算力与网络。 |
 | Web search | [tavily-skill](https://github.com/grapeot/tavily-skill) | Tavily search/extract CLI，给 agent 稳定 JSON 输出 |
 | Web search | [firecrawl-skill](https://github.com/grapeot/firecrawl-skill) | 使用 Firecrawl v2 的搜索/提取 CLI，纯标准库没有第三方依赖。命令行和 JSON 输出完全兼容 tavily-skill，可以直接平替。搜索默认包含网页全文 Markdown，网页提取支持按查询高亮，调用前会在 stderr 输出 credit 预估 |
 | Documents | [gdocs-skill](https://github.com/grapeot/gdocs-skill) | Google Docs 创建、搜索、修改、分享，支持 Markdown 和 tab |
